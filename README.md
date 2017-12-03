@@ -9,4 +9,4 @@ pip install virtualenv
 pip install virtualenvwrapper-win
 mkvirtualenv flask_env
 pip install flask
-python app.py```
+python app.py

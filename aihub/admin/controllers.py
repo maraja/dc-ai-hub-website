@@ -26,3 +26,17 @@ def getMember(name):
 
     # this code will allow us to return all the variables within scope
     return render_template('quote.html', **locals())
+
+@admin.route("/<string:name>/books/")
+def getBooks(name):
+
+    books = {
+	    "Learn Python The Hard Way": {
+	        "author": "Shaw, Zed",
+	        "rating": "3.92",
+	        "image": "ef0ceaab-32a8-47fb-ba13-c0b362d970da.jpg"
+	    }
+    }
+
+    # passing data to the template
+    return render_template("books.html", **locals())
