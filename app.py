@@ -1,10 +1,11 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from random import randint
-app = Flask(__name__)
+from aihub import app
+# app = Flask(__name__)
  
-@app.route("/")
-def index():
-    return "Index!"
+# @app.route("/")
+# def index():
+#     return "Index!"
  
 @app.route("/hello")
 def hello():
